@@ -1,23 +1,61 @@
 aid: soaringtitan
+
 name: Soaringtitan
-description: 'Soaringtitan is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Soaringtitan provides a cloud‑based platform for managing and visualizing IoT device fleets, offering real‑time telemetry, device provisioning, and analytics dashboards. The service includes secure API access, webhook notifications, and integration with major cloud providers, enabling enterprises to monitor, control, and derive insights from their connected devices at scale.'
+
 url: https://raw.githubusercontent.com/api-evangelist/soaringtitan/refs/heads/main/apis.yml
+
+image: https://soaringtitan.com/_next/static/media/logonobackground.1e6e228e.svg
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
-- Company
-apis: []
+- IoT
+- Cloud
+- Analytics
+- DeviceManagement
+- Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/soaringtitan-hosts.yml
+- type: Vendors
+  url: vendors/soaringtitan-vendors.yml
+- type: GitHubOrganization
+  url: https://github.com/SoaringTitan
+- type: DomainSecurity
+  url: security/soaringtitan-domain-security.yml
 - type: Website
   url: https://soaringtitan.com/
+- type: GettingStarted
+  url: https://soaringtitan.com/about
+- type: Documentation
+  url: https://soaringtitan.com/services
+- type: Contact
+  url: https://soaringtitan.com/contact
+
+apis: []
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
